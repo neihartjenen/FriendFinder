@@ -15,4 +15,3 @@ require(path.join(__dirname, '/app/routing/htmlRoutes.js'))(app);
 app.listen(PORT, function() {
   console.log('Friend Finder app is listening on PORT: ' + PORT);
 });
-© 2020 GitHub, Inc.
