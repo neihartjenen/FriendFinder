@@ -1,39 +1,33 @@
 var friends = [
     {
         name: "Trevor",
-        photo:"",
         email: "trevor.baker@fakeemail.com",
-        scores:[]
+        scores:[1,5,4,3,2,3,4,1,3,3]
     },
     {
         name: "Tim",
-        photo:"",
         email: "timtheman@fakeemail.com",
-        scores:[]
+        scores:[4,3,4,2,3,4,5,3,2,1]
     },
     {
         name: "Jake",
-        photo:"",
         email: "jakethesnake@fakeemail.com",
-        scores:[]
+        scores:[2,3,2,4,1,5,3,2,1,3]
     },
     {
         name: "Lenny",
-        photo:"",
         email: "lenny.laco@fakeemail.com",
-        scores:[]
+        scores:[2,3,2,4,2,4,1,3,2,3]
     },
     {
         name: "Terry",
-        photo:"",
         email: "terry.kerrigan@fakeemail.com",
-        scores:[]
+        scores:[3,2,1,3,4,2,4,5,5,2]
     },
     {
         name: "Noah",
-        photo:"",
         email: "noah.rose@fakeemail.com",
-        scores:[]
+        scores:[3,3,2,4,1,5,2,3,4,2]
     },
 ];
 
