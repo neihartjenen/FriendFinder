@@ -1,2 +1,2 @@
-# friendFinder
-Friend Finder 
+# FriendFinder
+In this project, I will be creating an app called FriendFinder. This app will allow you to match with users that could be your potential friend. The app will take in users name, photo and email address, once provided, they will be encouraged to take a survey. The survey will be a 10 question test using statements of which you will rate 1(strongly disagree) to 10(strongly agree). Once the survey is completed the app will return information on your best match. 
