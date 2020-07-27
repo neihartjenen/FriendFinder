@@ -22,7 +22,7 @@ app.post("/data/friends", function(req, res) {
             scoreDifference += Math.abs(parseInt(newScores[f]) - parseInt(friends[i].scores[f]));
             if(scoreDifference <= bestMatch.difference) {
               bestMatch.name = friends[i].name;
-              bestMatch.email = friends[i].email;
+              bestMatch.photo = friends[i].photo;
               bestMatch.difference = scoreDifference;
             }
           }
