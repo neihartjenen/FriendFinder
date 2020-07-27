@@ -1,20 +1,18 @@
-var friends = require("../data/friends.js")
+var friends = require("../data/friends");
 
-module.exports = function (app){
+module.exports = function(app) {
 
-app.get("/api/friends", function(req,res){
+// Displays all friends
+app.get("/data/friends", function(req, res) {
+    return res.json(friends);
+  });
 
-    res.json(friends)
-})
-
-app.post('/api/friends', function(req, res) {
-
-    var userInput = req.body;
-    var userAnswer = userInput.scores;
-    var matchName = '';
-    var matchEmail = '';
+  // Create new survey results
+app.post("/data/friends", function(req, res) {
+    var bestMatch = {name: "", photo: "", difference: 1000},
+    newSurvey = req.body,
+    newName = newSurvey.name,
+    newScores = newSurvey.scores,
+    scoreDifference;
    
-   
-   
-   
-    friends.push(userInput);
+    }
