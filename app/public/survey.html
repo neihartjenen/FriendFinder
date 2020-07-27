@@ -70,7 +70,7 @@
           <option value="5">5 (Strongly Agree)</option>
       </select>
 
-      <h3><strong>Question 4</strong></h3>
+      <h3><strong>Question 5</strong></h3>
       <h4>You are the life of the party and everyone knows you.</h4>
       <select class="selection" id="q4">
           <option value=""></option>
@@ -81,12 +81,34 @@
           <option value="5">5 (Strongly Agree)</option>
       </select>
 
+      <br>
+      <br>
       <button type="submit" class="btn btn-primary btn-md btn-block" id="submit">
           Submit</button>
 
   </div>
 
  
+  <div id="results-modal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h2 class="modal-title"><strong>New Bestfriend!</strong></h2>
+              </div>
+              <div class="modal-body">
+                  <h2 id="match-name"></h2>
+                  <img id="match-img" src="*" alt="Placeholder">
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+          </div>
+
+      </div>
+  </div>
+
+  
 
 </body>
 
