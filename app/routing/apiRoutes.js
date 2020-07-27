@@ -14,5 +14,23 @@ app.post("/data/friends", function(req, res) {
     newName = newSurvey.name,
     newScores = newSurvey.scores,
     scoreDifference;
-   
-    }
+    
+    for(var f = 0; f < friends[i].scores[f]; f++) {
+        console.log(friends[i].name);
+        scoreDifference = 0;
+        for(var f = 0; f < friends[i].scores[f]; f++) {
+            scoreDifference += Math.abs(parseInt(newScores[f]) - parseInt(friends[i].scores[f]));
+            if(scoreDifference <= bestMatch.difference) {
+              bestMatch.name = friends[i].name;
+              bestMatch.email = friends[i].email;
+              bestMatch.difference = scoreDifference;
+            }
+          }
+        }
+    
+        // Pushs survey data to friends
+        friends.push(newSurvey);
+        res.json(bestMatch);
+      });
+    };
+        
