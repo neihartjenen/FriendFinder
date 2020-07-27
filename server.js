@@ -1,17 +1,18 @@
-var express = require("express")
-var path = require("path")
+var express = require("express");
+var path = require("path");
 
-var app = express()
-var PORT = process.env.PORT || 8080
+// Sets up Express App
+var app = express();
+var PORT = process.env.PORT || 3000;
 
+// Enables express app to handle data parsing
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+app.use(express.static("./app/public"));
 
-//Adding application routes 
-require(path.join(__dirname, '/app/routing/apiRoutes.js'))(app);
-require(path.join(__dirname, '/app/routing/htmlRoutes.js'))(app);
+require("./app/routing/apiRoutes")(app);
+require("./app/routing/htmlRoutes")(app);
 
-// Start listening on PORT
 app.listen(PORT, function() {
-  console.log('Friend Finder app is listening on PORT: ' + PORT);
-});
+    console.log("App listening on PORT: " + PORT);
+  });
